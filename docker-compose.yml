@@ -1,0 +1,21 @@
+version: "3"
+
+volumes:
+
+    statements:
+
+    kaasu:
+
+services:
+
+    kaasu:
+
+        build: .
+
+        restart: unless-stopped
+
+        container_name: kaasu
+
+        volumes:
+            - "statements:/source"
+            - "kaasu:/destination"
