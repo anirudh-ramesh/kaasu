@@ -2,6 +2,8 @@ FROM alpine:3.15
 
 MAINTAINER Anirudh Ramesh
 
+RUN apk add sqlite
+
 RUN mkdir /source /destination
 
 COPY crontab /etc/crontabs/root
