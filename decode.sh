@@ -4,8 +4,6 @@ echo "date,transactionNumber,transactionInfo,points,valueAmount_O,valueAmount_â‚
 
 for file in /source/*; do
 
-	content=`tail -n +9 "$file"`
-
-	echo $content >> /destination/card.csv
+	tail -n +9 "$file" >> /destination/card.csv
 
 done
