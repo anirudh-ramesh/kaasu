@@ -3,6 +3,7 @@ FROM alpine:3.15
 MAINTAINER Anirudh Ramesh
 
 RUN apk add sqlite
+RUN apk add catdoc --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/
 
 RUN mkdir /source /destination
 
